@@ -85,4 +85,3 @@ wss.on("connection", (ws) => {
 
 console.log("🚀 서버 실행 중");
 console.log("ws://0.0.0.0:3000");
-EOF
