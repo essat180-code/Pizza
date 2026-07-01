@@ -1,7 +1,9 @@
 const WebSocket = require("ws");
 
-const wss = new WebSocket.Server({ port: 3000 });
+const PORT = process.env.PORT || 3000;
+const wss = new WebSocket.Server({ port: PORT });
 
+console.log("서버 실행:", PORT);
 // 게임 상태 (모든 플레이어 공유)
 let game = {
   money: 1000,
